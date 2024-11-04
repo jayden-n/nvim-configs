@@ -2,7 +2,7 @@
 vim.opt.nu = true
 vim.opt.rnu = true
 
--- Disable showing the mode below the statusline
+-- Enable showing the mode below the statusline
 vim.opt.showmode = true
 
 -- Set tabs to 2 spaces
@@ -56,7 +56,7 @@ vim.opt.signcolumn = "yes"
 
 -- Enable access to System Clipboard
 vim.opt.clipboard = "unnamed,unnamedplus"
-
+vim.opt.termguicolors = true
 -- Enable cursor line highlight
 vim.opt.cursorline = true
 
@@ -70,8 +70,8 @@ vim.opt.foldcolumn = "0"
 vim.opt.foldnestmax = 5
 vim.opt.foldtext = ""
 
--- Always keep 8 lines above/below cursor unless at start/end of file
-vim.opt.scrolloff = 8
+-- Always keep 10 lines above/below cursor unless at start/end of file
+vim.opt.scrolloff = 10
 
 -- Place a column line
 -- vim.opt.colorcolumn = "80"

@@ -59,6 +59,14 @@ return {
 			local servers = {
 				-- LSP Servers
 				bashls = {},
+				gopls = {
+					completeUnimported = true,
+					usePlaceholders = true,
+					analyses = {
+						unusedparams = true,
+					},
+				},
+				emmet_ls = {},
 				biome = {},
 				cssls = {},
 				gleam = {

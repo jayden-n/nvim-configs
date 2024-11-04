@@ -13,6 +13,12 @@ local M = {}
 -- Normal --
 -- Disable Space bar since it'll be used as the leader key
 nnoremap("<space>", "<nop>")
+nnoremap("<C-a>", "ggVG", { desc = "Select All" })
+
+-- Window management --
+-- Split windows
+nnoremap("<leader>sv", ":vsplit<CR>", { desc = "Split window vertically" })
+nnoremap("<leader>sh", ":split<CR>", { desc = "Split window horizontally" })
 
 -- Window +  better kitty navigation
 nnoremap("<C-j>", function()
@@ -267,7 +273,7 @@ nnoremap("<leader>sb", require("telescope.builtin").buffers, { desc = "[S]earch 
 nnoremap("<leader>ff", function()
 	require("telescope.builtin").find_files({ hidden = true })
 end, { desc = "[S]earch [F]iles" })
-nnoremap("<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
+-- nnoremap("<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
 nnoremap("<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
 
 nnoremap("<leader>sc", function()
