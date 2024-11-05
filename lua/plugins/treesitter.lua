@@ -34,6 +34,7 @@ return {
 					"dockerfile",
 					"gitignore",
 					"sql",
+					"tsx",
 				},
 				sync_install = false,
 				highlight = {

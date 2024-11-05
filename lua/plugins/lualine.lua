@@ -53,7 +53,7 @@ return {
 						"diagnostics",
 					},
 					lualine_c = {
-						{ "filename", path = 1 },
+						{ "filename", path = 4 },
 					},
 					lualine_x = {
 						"filetype",

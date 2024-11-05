@@ -210,7 +210,7 @@ return {
 				javascript = { "biome" },
 				typescript = { "biome" },
 				typescriptreact = { "biome" },
-				svelte = { "prettierd", "prettier " },
+				-- svelte = { "prettierd", "prettier " },
 				lua = { "stylua" },
 			},
 		},
