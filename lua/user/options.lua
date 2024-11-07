@@ -57,6 +57,7 @@ vim.opt.signcolumn = "yes"
 -- Enable access to System Clipboard
 vim.opt.clipboard = "unnamed,unnamedplus"
 vim.opt.termguicolors = true
+
 -- Enable cursor line highlight
 vim.opt.cursorline = true
 

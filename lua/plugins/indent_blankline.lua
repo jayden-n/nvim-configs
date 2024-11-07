@@ -15,6 +15,8 @@ return {
 					"mason",
 					"notify",
 					"oil",
+					"nvimtree",
+					"dashboard",
 				},
 			},
 		},

@@ -22,3 +22,4 @@ Some plugins to try:
   - [vim-textobj-hydrogen](https://github.com/GCBallesteros/vim-textobj-hydrogen). Check this [blog](https://www.maxwellrules.com/misc/nvim_jupyter.html) for more info.
 - Git diff and refactoring in Neovim: [diffview.nvim](https://github.com/sindrets/diffview.nvim)
 - Structural search and replace: [ssr.nvim](https://github.com/cshuaimin/ssr.nvim). ssr.nvim parses your search pattern to syntax trees to perform structural searching.
+- Structural search and replace: [ssr.nvim](https://github.com/cshuaimin/ssr.nvim). ssr.nvim parses your search pattern to syntax trees to perform structural searching.

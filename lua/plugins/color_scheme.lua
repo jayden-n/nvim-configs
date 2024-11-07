@@ -1,15 +1,33 @@
 return {
-
 	{
 		"catppuccin/nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
-				-- opts = {
-				-- 	transparent_background = true,
-				-- },
+				styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+					comments = { "italic" },
+					conditionals = { "italic" },
+					loops = {},
+					functions = { "italic" },
+					keywords = {},
+					strings = {},
+					variables = {},
+					numbers = {},
+					booleans = {},
+					properties = {},
+					types = { "italic" },
+					operators = {},
+					-- miscs = {}, -- Uncomment to turn off hard-coded styles
+				},
 				integrations = {
+					barbecue = {
+						dim_dirname = true, -- directory name is dimmed by default
+						bold_basename = true,
+						dim_context = false,
+						alt_background = false,
+					},
+					dashboard = true,
 					cmp = true,
 					fidget = true,
 					gitsigns = true,
@@ -19,6 +37,7 @@ return {
 						scope_color = "sapphire",
 						colored_indent_levels = false,
 					},
+					semantic_tokens = true,
 					mason = true,
 					noice = true,
 					notify = true,
