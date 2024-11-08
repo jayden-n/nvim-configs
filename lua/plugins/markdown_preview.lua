@@ -10,4 +10,5 @@ return {
 	-- 	"MarkdownPreviewStop",
 	-- },
 	"davidgranstrom/nvim-markdown-preview",
+	event = "VeryLazy",
 }
