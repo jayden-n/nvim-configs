@@ -20,6 +20,8 @@ nnoremap("<C-a>", "ggVG", { desc = "Select All" })
 nnoremap("<leader>sv", ":vsplit<CR>", { desc = "Split window vertically" })
 nnoremap("<leader>sh", ":split<CR>", { desc = "Split window horizontally" })
 
+nnoremap("<leader>lu", ":Lazy<CR>", { desc = "Open Lazy.nvim" })
+
 -- Window +  better kitty navigation
 nnoremap("<C-j>", function()
 	if vim.fn.exists(":NvimTmuxNavigateDown") ~= 0 then
@@ -268,7 +270,7 @@ nnoremap("<leader>gf", function()
 end, { desc = "Search [G]it [F]iles" })
 
 -- Telescope keybinds --
-nnoremap("<leader>r", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
+nnoremap("<leader>ro", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
 nnoremap("<leader>sb", require("telescope.builtin").buffers, { desc = "[S]earch Open [B]uffers" })
 nnoremap("<leader>ff", function()
 	require("telescope.builtin").find_files({ hidden = true })
